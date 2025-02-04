@@ -8,12 +8,12 @@ const PORT = process.env.PORT || 3001;
 
 
 app.use(cors({
-  origin: 'http://localhost:5173'
+  origin: 'https://exa-front-stevenegrete12-gmailcoms-projects.vercel.app/'
 }));
 app.use(express.json());+
 
 
-mongoose.connect('mongodb://127.0.0.1:27017/examen',
+mongoose.connect('mongodb+srv://roger:roger1475@cluster0.ou6e8.mongodb.net/examen?retryWrites=true&w=majority',
 //mongoose.connect('mongodb+srv://roger:roger1475@cluster0.ou6e8.mongodb.net/examen?retryWrites=true&w=majority',
  {
   useNewUrlParser: true,
